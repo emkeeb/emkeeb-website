@@ -1,34 +1,35 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { useLocation } from 'react-router-dom'
-import { StyledHeader, StyledLink, SyledLinkContainer } from './styles';
+import { StyledHeader, StyledLink, SyledLinkContainer, StyledLogo } from './styles';
+import logo from '../assets/images/logo.png';
 
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState();
     const location = useLocation();
     const currentPath = location.pathname;
-    const listenScrollEvent = (e) => {
+
+    const listenScrollEvent = useCallback((e) => {
         if (window.scrollY > 0) {
             setIsScrolled(true);
         } else {
             setIsScrolled(false);
         }
-      }
+      },[setIsScrolled])
 
     useEffect(() => {
         window.addEventListener('scroll', listenScrollEvent);
-        console.log("hey", isScrolled, window.ScrollY)
     },[isScrolled, listenScrollEvent])
 
-    console.log(isScrolled)
     return (
       <StyledHeader $scrolled={isScrolled}>
-          <SyledLinkContainer>
-            <StyledLink $scrolled={isScrolled} $isActive={currentPath === '/'} $isHome to="/">home</StyledLink>
-            <StyledLink $scrolled={isScrolled} $isActive={currentPath === '/about'} to="/about">about</StyledLink>
-            <StyledLink $scrolled={isScrolled} $isActive={currentPath === '/blog'} to="/blog">blog</StyledLink>
-            <StyledLink $scrolled={isScrolled} $isActive={currentPath === '/setup'} to="/setup">setup</StyledLink>
-            <StyledLink $scrolled={isScrolled} $isActive={currentPath === '/build-service'} to="/build-service">build service</StyledLink>
+          <StyledLogo src={logo} />
+          <SyledLinkContainer className='font-regular'>
+            <StyledLink $scrolled={isScrolled} $isActive={currentPath === '/'} $isHome to="/">HOME</StyledLink>
+            {/* <StyledLink $scrolled={isScrolled} $isActive={currentPath === '/about'} to="/about">ABOUT</StyledLink>
+            <StyledLink $scrolled={isScrolled} $isActive={currentPath === '/blog'} to="/blog">BLOG</StyledLink>
+            <StyledLink $scrolled={isScrolled} $isActive={currentPath === '/setup'} to="/setup">SETUP</StyledLink>
+            <StyledLink $scrolled={isScrolled} $isActive={currentPath === '/build-service'} to="/build-service">BUILD SERVICE</StyledLink> */}
           </SyledLinkContainer>
       </StyledHeader>
     );
