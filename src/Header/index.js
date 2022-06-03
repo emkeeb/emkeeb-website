@@ -40,10 +40,17 @@ const Header = () => {
         >
           HOME
         </StyledLink>
+        <StyledLink
+          $scrolled={isScrolled}
+          $isActive={currentPath === "/build-service"}
+          to="/build-service"
+        >
+          BUILD SERVICE
+        </StyledLink>
         {/* <StyledLink $scrolled={isScrolled} $isActive={currentPath === '/about'} to="/about">ABOUT</StyledLink>
             <StyledLink $scrolled={isScrolled} $isActive={currentPath === '/blog'} to="/blog">BLOG</StyledLink>
             <StyledLink $scrolled={isScrolled} $isActive={currentPath === '/setup'} to="/setup">SETUP</StyledLink>
-            <StyledLink $scrolled={isScrolled} $isActive={currentPath === '/build-service'} to="/build-service">BUILD SERVICE</StyledLink> */}
+          */}
       </SyledLinkContainer>
     </StyledHeader>
   );
