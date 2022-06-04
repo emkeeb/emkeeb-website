@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Colors, FontSize } from "../GlobalStyles";
+import { Colors } from "../GlobalStyles";
 
 const StyledLandingPageHeader = styled.div`
   float: left;

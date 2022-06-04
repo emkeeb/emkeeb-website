@@ -8,16 +8,16 @@ import twittericon from "../../assets/images/twittericon.jpeg";
 const SocialMediaBar = () => {
   return (
     <StyledSocialMediaBar>
-      <a href={SocialMediaLinks.youtube} target="_blank">
+      <a href={SocialMediaLinks.youtube} target="_blank" rel="noreferrer">
         <MediaIcon src={youtubeicon} />
       </a>
-      <a href={SocialMediaLinks.instagram} target="_blank">
+      <a href={SocialMediaLinks.instagram} target="_blank" rel="noreferrer">
         <MediaIcon src={instagramicon} />
       </a>
-      <a href={SocialMediaLinks.tiktok} target="_blank">
+      <a href={SocialMediaLinks.tiktok} target="_blank" rel="noreferrer">
         <MediaIcon src={tiktokicon} />
       </a>
-      <a href={SocialMediaLinks.twitter} target="_blank">
+      <a href={SocialMediaLinks.twitter} target="_blank" rel="noreferrer">
         <MediaIcon src={twittericon} />
       </a>
     </StyledSocialMediaBar>
