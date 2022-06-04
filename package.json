@@ -48,6 +48,6 @@
     "**/*": "prettier --write --ignore-unknown"
   },
   "engines": {
-    "node": ">=10.0"
+    "node": ">=16.0"
   }
 }
