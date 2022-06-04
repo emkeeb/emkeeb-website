@@ -1,9 +1,9 @@
 # cloudbuild.yaml
 steps:
-  - name: node:10.15.1
+  - name: node:18
     entrypoint: yarn
     args: ["install"]
-  - name: node:10.15.1
+  - name: node:18
     entrypoint: yarn
     args: ["run", "build"]
   - name: "gcr.io/cloud-builders/gcloud"
