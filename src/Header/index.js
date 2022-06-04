@@ -30,7 +30,9 @@ const Header = () => {
 
   return (
     <StyledHeader $scrolled={isScrolled}>
-      <StyledLogo src={logo} />
+      <a href="/">
+        <StyledLogo src={logo} />
+      </a>
       <SyledLinkContainer className="font-regular">
         <StyledLink
           $scrolled={isScrolled}

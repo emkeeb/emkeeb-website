@@ -4,7 +4,7 @@ import {
   NameTitle,
   StyledHr,
 } from "./styles";
-import emkeebpfp from "../../assets/images/emkeebpfp.png";
+import emkeebpfp from "../../assets/images/emkeebpfp.JPG";
 import SocialMediaBar from "../SocialMediaBar";
 
 const LandingPageCard = () => {
