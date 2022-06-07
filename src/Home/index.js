@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import {
   StyledPageLandingBlock,
-  StyledInfoContainer,
   StyledLandingPageHeader,
   LandingPageContentWrapper,
   StyledSpanBorder,
@@ -34,22 +33,25 @@ const Home = () => {
             <div className="margin-top-xl margin-bottom-xl">
               <ButtonPrimary
                 onClick={() => navigateTo("build-service")}
-                className="margin-right-lg"
+                className="margin-right-lg font-size-body"
               >
                 build service
               </ButtonPrimary>
-              <ButtonSecondary onClick={() => navigateTo("")}>
+              <ButtonSecondary
+                onClick={() => navigateTo("")}
+                className="font-size-body"
+              >
                 contact me
               </ButtonSecondary>
             </div>
             <div className="font-light font-line-height-x2 padding-top-xs">
-              <p>
+              <p className="font-size-body">
                 I have a passion for tech and keyboards, and love creating
                 content for both!
               </p>
-              <p>
-                I build & review keyboards, I also take commissions for keyboard
-                builds for <b>FREE</b>. So if you're interested in owning an
+              <p className="font-size-body">
+                I build & review keyboards, I take commissions for keyboard
+                builds for <b>FREE</b>. If you're interested in owning an
                 awesome keyboard with a personal build experience click the
                 build service button above!
               </p>
@@ -57,7 +59,6 @@ const Home = () => {
           </StyledLandingPageHeader>
         </LandingPageContentWrapper>
       </StyledPageLandingBlock>
-      <StyledInfoContainer />
     </div>
   );
 };
