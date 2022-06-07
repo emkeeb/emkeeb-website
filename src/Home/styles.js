@@ -22,6 +22,10 @@ const LandingPageContentWrapper = styled.div`
   position: absolute;
   top: 25%;
   left: 30%;
+
+  @media (max-width: 960px) {
+    top: 150px;
+  }
 `;
 
 const StyledSpanBorder = styled.span`

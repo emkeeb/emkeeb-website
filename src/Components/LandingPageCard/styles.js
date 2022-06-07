@@ -21,7 +21,7 @@ const ProfilePicture = styled.img`
 const NameTitle = styled.div`
   text-align: center;
   font-size: ${FontSize.header};
-  margin: 8%;
+  margin: 25px;
 `;
 
 const StyledHr = styled.hr`

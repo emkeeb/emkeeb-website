@@ -14,5 +14,9 @@ const StyledFAQ = styled.div`
   margin: 0 15%;
   padding-top: 25px;
   text-align: left;
+
+  @media (max-width: 960px) {
+    margin: 0 15px;
+  }
 `;
 export { StyledGridContainer, StyledFAQ };

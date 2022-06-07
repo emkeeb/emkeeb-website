@@ -21,7 +21,7 @@ const StyledTitleCard = styled.div`
   border-left: 2px solid ${Colors.accent};
   padding-left: 5px;
   width: fit-content;
-  margin: auto;
+  margin: 15px auto 0 auto;
 `;
 
 const StyledCardnfo = styled.div`
