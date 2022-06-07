@@ -11,9 +11,11 @@ const Colors = {
   accent: "#4169E1",
   white: "#FFFFFF",
   black: "#000000",
+  grey: "#474747",
 };
 
 const FontSize = {
+  humongus: "100px",
   gigantic: "75px",
   big: "55px",
   header: "34px",

@@ -1,14 +1,15 @@
 import { Colors } from "../../GlobalStyles";
 import {
   StyledMainTitleSection,
-  StyledColorBackground,
   StyledTitle,
   StyledContainer,
+  StyledWrapper,
 } from "./styles";
 
 const MainTitleSection = ({
   height = "60vh",
   width = "100%",
+  padding,
   title = "",
   backgroundPicture = "/",
   backgroundColor = `${Colors.white}`,
@@ -24,18 +25,21 @@ const MainTitleSection = ({
         $width={width}
         $location={location}
         $backgroundPicture={backgroundPicture}
+        $backgroundColor={backgroundColor}
       >
-        <StyledColorBackground $backgroundColor={backgroundColor} />
-        <StyledContainer>
-          <StyledTitle
+        <StyledContainer $padding={padding}>
+          <StyledWrapper
             className="font-black"
             $textColor={textColor}
             $fontSize={fontSize}
             $location={location}
           >
-            <span className="font-black"> {title} </span>
-          </StyledTitle>
-          {children}
+            <StyledTitle className="font-black" $fontSize={fontSize}>
+              {" "}
+              {title}{" "}
+            </StyledTitle>
+            {children}
+          </StyledWrapper>
         </StyledContainer>
       </StyledMainTitleSection>
     </>
