@@ -41,6 +41,8 @@ const ButtonPrimary = styled.button`
   border-radius: 20px;
   border: 2px solid ${Colors.accent};
   padding: 10px 40px;
+  height: 45px;
+  width: 175px;
 
   :hover {
     background-color: transparent;
@@ -59,6 +61,8 @@ const ButtonSecondary = styled.button`
   border: 2px solid ${Colors.black};
   border-radius: 20px;
   padding: 10px 40px;
+  height: 45px;
+  width: 175px;
 
   :hover {
     background-color: ${Colors.accent};

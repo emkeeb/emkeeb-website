@@ -33,7 +33,7 @@ const Home = () => {
             <div className="margin-top-xl margin-bottom-xl">
               <ButtonPrimary
                 onClick={() => navigateTo("build-service")}
-                className="margin-right-lg font-size-body"
+                className="margin-right-lg margin-bottom-sm font-size-body"
               >
                 build service
               </ButtonPrimary>

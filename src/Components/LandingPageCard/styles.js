@@ -9,6 +9,10 @@ const StyledLandingPageCard = styled.div`
   text-align: center;
   float: left;
   position: relative;
+  @media (max-width: 550px) {
+    width: 300px;
+    height: 400px;
+  }
 `;
 
 const ProfilePicture = styled.img`
@@ -16,6 +20,10 @@ const ProfilePicture = styled.img`
   height: 250px;
   width: 250px;
   margin-top: 10%;
+  @media (max-width: 550px) {
+    width: 150px;
+    height: 150px;
+  }
 `;
 
 const NameTitle = styled.div`
