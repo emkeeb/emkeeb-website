@@ -5,6 +5,11 @@ const StyledLandingPageHeader = styled.div`
   float: left;
   width: 370px;
   margin: 30px;
+
+  @media (max-width: 550px) {
+    width: 80%;
+    margin: 30px 0;
+  }
 `;
 
 const StyledPageLandingBlock = styled.div`
@@ -25,6 +30,7 @@ const LandingPageContentWrapper = styled.div`
 
   @media (max-width: 960px) {
     top: 150px;
+    left: 10%;
   }
 `;
 
