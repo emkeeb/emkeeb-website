@@ -19,4 +19,32 @@ const StyledFAQ = styled.div`
     margin: 0 15px;
   }
 `;
-export { StyledGridContainer, StyledFAQ };
+
+const StyledNotes = styled.div`
+  text-align: left;
+  margin: 0 15%;
+
+  @media (max-width: 960px) {
+    margin: 0 15px;
+  }
+`;
+
+const FloatingButton = styled.div`
+  position: absolute;
+  top: 110px;
+  left 10px;
+  
+  button {
+    width: fit-content;
+  }
+
+  @media (max-width: 650px) {
+    top: 102px;
+    left: 2px;
+    button {
+      height: 30px;
+      padding: 4px 10px;
+    }
+  }
+`;
+export { StyledGridContainer, StyledFAQ, StyledNotes, FloatingButton };
