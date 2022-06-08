@@ -4,33 +4,54 @@ import { Colors } from "../GlobalStyles";
 const StyledLandingPageHeader = styled.div`
   float: left;
   width: 370px;
-  margin: 30px;
+  padding: 30px;
 
   @media (max-width: 550px) {
     width: 80%;
-    margin: 30px 0;
+    padding: 30px 0;
   }
 `;
 
 const StyledPageLandingBlock = styled.div`
-  width: 40%;
-  height: 80vh;
   background: ${Colors.main.lighter};
+  height: 65vh;
+  width: 40%;
+  position: absolute;
+  z-index: -1;
 `;
 
 const StyledInfoContainer = styled.div`
-  height: 500px;
   width: 100%;
-`;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: auto auto auto;
+  gap: 0 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 
-const LandingPageContentWrapper = styled.div`
-  position: absolute;
-  top: 25%;
-  left: 30%;
+  padding: ${(props) =>
+    props.$isFirstContainer ? "200px 0 100px 0" : "100px 0 50px 0"};
 
   @media (max-width: 960px) {
-    top: 150px;
-    left: 10%;
+    padding: ${(props) =>
+      props.$isFirstContainer ? "125px 0 25px 0;" : "25px 0 25px 0"};
+  }
+`;
+
+const StyledYoutubeInfo = styled.div`
+  float: right;
+  color: ${Colors.accent};
+  padding: 20px;
+`;
+
+const StyledYoutubeIframe = styled.div`
+  width: 560px;
+  height: 315px;
+
+  @media (max-width: 640px) {
+    width: 300px;
+    height: 200px;
   }
 `;
 
@@ -42,6 +63,7 @@ export {
   StyledPageLandingBlock,
   StyledInfoContainer,
   StyledLandingPageHeader,
-  LandingPageContentWrapper,
   StyledSpanBorder,
+  StyledYoutubeInfo,
+  StyledYoutubeIframe,
 };
