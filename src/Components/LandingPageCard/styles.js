@@ -37,4 +37,18 @@ const StyledHr = styled.hr`
   width: 15%;
 `;
 
-export { StyledLandingPageCard, ProfilePicture, NameTitle, StyledHr };
+const StyledSocialMediaBar = styled.div`
+  background-color: ${Colors.white};
+  width: 100%;
+  height: 55px;
+  position: absolute;
+  bottom: 0;
+`;
+
+export {
+  StyledLandingPageCard,
+  ProfilePicture,
+  NameTitle,
+  StyledHr,
+  StyledSocialMediaBar,
+};

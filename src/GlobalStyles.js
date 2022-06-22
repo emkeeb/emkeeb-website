@@ -12,6 +12,7 @@ const Colors = {
   white: "#FFFFFF",
   black: "#000000",
   grey: "#474747",
+  greyLightest: "#EBEBEB",
 };
 
 const FontSize = {
