@@ -3,6 +3,7 @@ import {
   ProfilePicture,
   NameTitle,
   StyledHr,
+  StyledSocialMediaBar,
 } from "./styles";
 import emkeebpfp from "../../assets/images/emkeebpfp.JPG";
 import SocialMediaBar from "../SocialMediaBar";
@@ -16,7 +17,9 @@ const LandingPageCard = () => {
       <div className="font-letter-spacing font-light margin-xl">
         CONTENT CREATOR
       </div>
-      <SocialMediaBar />
+      <StyledSocialMediaBar>
+        <SocialMediaBar />
+      </StyledSocialMediaBar>
     </StyledLandingPageCard>
   );
 };

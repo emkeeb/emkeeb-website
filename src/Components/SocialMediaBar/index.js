@@ -1,4 +1,4 @@
-import { StyledSocialMediaBar, MediaIcon } from "./styles";
+import { MediaIcon } from "./styles";
 import { SocialMediaLinks } from "../../constants";
 import instagramicon from "../../assets/images/instagramicon.png";
 import youtubeicon from "../../assets/images/youtubeicon.png";
@@ -7,7 +7,7 @@ import twittericon from "../../assets/images/twittericon.jpeg";
 
 const SocialMediaBar = () => {
   return (
-    <StyledSocialMediaBar>
+    <>
       <a href={SocialMediaLinks.youtube} target="_blank" rel="noreferrer">
         <MediaIcon src={youtubeicon} />
       </a>
@@ -20,7 +20,7 @@ const SocialMediaBar = () => {
       <a href={SocialMediaLinks.twitter} target="_blank" rel="noreferrer">
         <MediaIcon src={twittericon} />
       </a>
-    </StyledSocialMediaBar>
+    </>
   );
 };
 

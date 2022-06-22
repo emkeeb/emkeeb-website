@@ -6,8 +6,14 @@ const StyledFooter = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 125px;
   background-color: ${Colors.greyLightest};
+  text-align: center;
 `;
 
-export { StyledFooter };
+const StyledHeartFingers = styled.img`
+  height: 20px;
+  width: 10px;
+`;
+
+export { StyledFooter, StyledHeartFingers };
