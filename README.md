@@ -24,4 +24,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ## Contributing
 
-I am always looking for contructive feedback so feel free to leave some on an open PR or via email(github@emkeeb.com).
+I am always looking for constructive feedback so feel free to leave some on an open PR or via email(github@emkeeb.com).
