@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 /* this is where the top level of everything will sit */
 const App = () => {
   return (
-    <div style={{ position: "relative", "padding-bottom": "200px" }}>
+    <div style={{ position: "relative", paddingBottom: "200px" }}>
       <Router>
         <Header />
         <Routes>

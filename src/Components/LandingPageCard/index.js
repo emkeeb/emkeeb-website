@@ -12,7 +12,9 @@ const LandingPageCard = () => {
   return (
     <StyledLandingPageCard>
       <ProfilePicture src={emkeebpfp} alt="emkeeb photo" />
-      <NameTitle className="font-bold">@emkeeb</NameTitle>
+      <NameTitle data-testid="main-name-title" className="font-bold">
+        @emkeeb
+      </NameTitle>
       <StyledHr />
       <div className="font-letter-spacing font-light margin-xl">
         CONTENT CREATOR
